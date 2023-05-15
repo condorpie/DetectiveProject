@@ -1,0 +1,284 @@
+title: Start
+tags:
+---
+<<fade_in ScreenFX>>
+<<wait 1>>
+<<screen_shake ScreenFX>>
+Mysterious Voice: AHHHHHHHHHH
+<<change_background ScreenImages "BlackScreen">>
+LATER THAT DAY
+<<change_background ScreenImages "MurderScene">>
+<<show_sprite DeadDirector>>
+...
+Sarah Christ: Damn, What a mess.
+<<show_sprite SarahChrist>>
+Sarah Christ: This wasn't a random act of violence.
+Sarah Christ: The killer had a purpose...
+Sarah Christ: and its my job to figure that out.
+<<show_sprite Executives>>
+<<screen_shake ScreenFX>>
+Studio Executives: Ms. Christ, thank God you're here. This is a complete disaster.
+Sarah Christ: What happened here?
+Studio Executives: Its famous director Jeter Packson. He's been murdered.
+Sarah Christ: I can see that...
+Sarah Christ: What else can you tell me?
+Studio Executives: We don't know much but there have been rumours of some kind of cult around the lots.
+Sarah Christ: I was afraid of that.
+Sarah Christ: Alright, I'll need access to the studio and all personnel files.
+Sarah Christ: And a cup of coffee wouldn't hurt either.
+Studio Executives: Ms. Christ. Anything to assist the investigation
+<<hide_sprite Executives>>
+Sarah Christ: Looks like it's going to be a long night. But that's just how I like it.
+<<hide_sprite SarahChrist>>
+<<hide_sprite DeadDirector>>
+<<fade_out ScreenFX>>
+<<wait 2>>
+<<jump Scene01>>
+===
+
+title: Scene01
+tags:
+---
+
+<<change_background ScreenImages "BlackScreen">>
+<<show_sprite SarahChrist02>>
+<<fade_in ScreenFX>>
+*Sarah Christ reflects on herself while taking a long drag of a cigarette*
+Sarah Christ: You want to know who I am?
+Sarah Christ: I'm Sarah Christ, private detective.
+Sarah Christ: I'm the one they call when the police can't solve the case.
+Sarah Christ: ...
+Sarah Christ: ... and it's left me jaded. 
+Sarah Christ: But I'm damn good at what I do.
+<<change_background ScreenImages "VanLife">>
+Sarah Christ: I live out of a van, and for some reason, I'm always damp.
+Sarah Christ: It's not glamorous, but it gets the job done.
+Sarah Christ: I've seen things that would make your blood run cold.
+Sarah Christ: But I keep going...
+Sarah Christ: Because someone has to do it.
+Sarah Christ: My only friend is this flash grenade I carry around with me at all times.
+<<change_background ScreenImages "RainyNight">>
+*Sarah takes another long drag of her cigarette and a sip of her coffee*
+Sarah Christ: The cases just keep coming, one after another.
+Sarah Christ: Each one harder than the last.
+Sarah Christ: But I never give up, I never back down.
+<<screen_shake ScreenFX>>
+Sarah Christ: I'm not afraid of the darkness.
+Sarah Christ: I've stared into the abyss, and it hasn't consumed me yet.
+*Sarah takes one last drag on her cigarette and stubs it out*
+Sarah Christ: So if you need someone to find the truth, someone to chase down the monsters, you know who to call.
+Sarah Christ: Just look for the damp lady detective smoking in her can.
+<<fade_out ScreenFX>>
+<<wait 2>>
+<<hide_sprite SarahChrist02>>
+<<jump Scene02>>
+===
+title: Scene02
+tags:
+---
+<<change_background ScreenImages "IntRoom">>
+<<fade_in ScreenFX>>
+<<show_sprite SarahChrist>>
+<<show_sprite Shayne>>
+<<screen_shake ScreenFX>>
+Sarah Christ: You were at the studio lot the night of John Anderson's murder.
+Young Man: Y-yes, I was there. But I didn't do anything. I swear.
+Sarah Christ: Then why did one of the security guards see you running from the soundstage just before the murder?
+Young Man: I-I was just there to see my girlfriend. She's an actress, you know.
+Sarah Christ: *Raises Eyebrow* YOU have a girlfriend
+<<screen_shake ScreenFX>>
+Young Man: I don't have to tell you anything. You can't prove I did anything wrong.
+*Sarah leans back in her chair, studying the young man for a moment.*
+Sarah Christ: Maybe you're right.
+Sarah Christ: Maybe I can't prove anything
+Sarah Christ: But I do know one thing.
+*She leans forward, locking eyes with the young man.*
+Sarah Christ: You're scared.
+Sarah Christ: You're scared because you know something.
+Sarah Christ: And you're scared because you think I'm going to find out what it is.
+Young Man: *swallows hard, eyes darting around the room.*
+Young Man: I don't know anything. I swear.
+
+-> Grab Young Man's file
+    Sarah Christ: I see you have a criminal record
+    Sarah Christ: Breaking and entering, assault. You're not exactly a model citizen are you?
+-> Lean Back in Chair Confidently
+    Young Man: *Sweats nervously*
+-> Yell "CAN I SMOKE IN HERE?"
+    Young Man: I guess? I don't know you're in charge in here?
+    Sarah Christ: All part of my technique.. *Lights a cigarette*
+
+Sarah Christ: Either way it looks like we can place you at the scene. Maybe up to your old tricks again?
+*Sarah slides a photo across the table. It's a grainy image of the young man, dressed in black, sneaking around the back of the studio lot.*
+<<show_sprite PhotoEvidence>>
+Sarah Christ: What were you doing there, hmm?
+Sarah Christ: Trying to break into the soundstage, maybe? Looking for something?
+Young Man: *looks ike he's about to pass out*
+
+-> Sarah Christ: WHAT DO YOU KNOW!
+    Young Man: Nothing! Okay! I don't know anything.
+-> Sarah Christ: *Put cigarette out on perps hand*
+    <<screen_shake ScreenFX>>
+    Young Man: OH MY GOD!!!! WHAT THE HELL!!!!!
+    Yound Man: stop stop stop okay...
+    Young Man: *Deep Breath* Look.....
+-> Sarah Christ: Look at me kid. You don't wanna keep this information from me.
+
+Young Man: I cant tell you...
+Young Man: *whispering* They'll Kill me
+Sarah Christ: Alright, kid. 
+Sarah Christ: You're not going to talk.
+Sarah Christ: But mark my words, I'm going to find out what you're hiding.
+Sarah Christ: And when I do, you're going away for a long time.
+<<hide_sprite SarahChrist>>
+*Sarah stands up, grabbing the Photo Evidence and heads for the door leaving the room.*
+<<hide_sprite PhotoEvidence>>
+<<wait 1>>
+Young Man: *Looks at the inside of his hand*
+<<hide_sprite Shayne>>
+<<show_sprite HandTattoo>>
+Young Man: She'll find out soon enough.... They're always watching...
+<<fade_out ScreenFX>>
+<<wait 2>>
+<<hide_sprite HandTattoo>>
+<<jump Scene03>>
+
+===
+title: Scene03
+tags:
+---
+
+Sarah White: There's no real leads so far, what should I do next
+
+-> Call ex boyfriend
+    Sarah White: That's never a good idea. He can't help right now.
+    Sarah White: I imagine if the developer had more time something might happen here.
+    <<jump Scene03>>
+-> Smoke a cigarette while standing on the river bank gazing into the night
+    Sarah White: Ah one of my favourite passtimes. The darkness is my only true ally in this world.
+    Sarah White: I imagine if the developer had more time something might happen here.
+    <<jump Scene03>>
+-> Stake out the movie studio. 
+    Sarah White: Hmmm yes. The killer always returns to the scene of the crime.
+    <<jump Scene04>>
+===
+title: Scene04
+tags:
+---
+<<change_background ScreenImages "MovieLot">>
+<<fade_in ScreenFX>>
+<<wait 2>>
+<<show_sprite Van>>
+<<show_sprite SarahChrist>>
+*Sarah sits in her van outside the movie lot where the murder occured reviewing evidence and drinking coffee*
+*Taking out the photo of John Anderson from the dashboard and stares at it for a moment.*
+<<show_sprite DirectorPicture>>
+Sarah Christ: Who killed you, John? What did you see that they didn't want you to?
+Sarah Christ: ... why did they take your eyes ...
+<<hide_sprite DirectorPicture>>
+<<show_sprite CultMember>>
+<<wait 1>>
+Sarah Christ: Wait a minute... Whos that..
+<<hide_sprite CultMember>>
+Sarah Christ: He went into one of the studios. Time to get a closer look.
+<<show_sprite Camera>>
+*Zooming in using her telephoto lens Sarah snaps a few photos through the window of the studio the shady figure entered.*
+Sarah Christ: What have we here...
+<<show_sprite RitualPhoto>>
+<<hide_sprite Camera>>
+Sarah Christ: A cult huh? Performing some kind of ritual.
+Sarah Christ: *Takes a sip of coffee and lights a cigarette*
+Sarah Christ: Looks like the studio execs weren't just blowing smoke after all.
+Sarah Christ: Alright I should..
+
+-> Call for Back up
+    Sarah Christ: No they'll never get here in time
+    Sarah Christ: Time to take action.
+-> Burst into the ritual
+    Sarah Christ: It's not like I have anything to lose
+    Sarah Christ: Alright lets go
+-> Head back to the station
+    Sarah Christ: The Chief would never believe me after all my loose cannon behaviour. Looks like its all up to me.
+    Sarah Christ: Looks like its up to me!
+
+<<hide_sprite RitualPhoto>>
+<<hide_sprite SarahChrist>>
+<<hide_sprite Van>>
+<<fade_out ScreenFX>>
+<<wait 2>>
+<<jump Scene05>>
+
+===
+title: Scene05
+tags:
+---
+*Sarah Christ stands at the entrance of the warehouse, gun drawn and ready to face the cult. She takes a deep breath ready to enter the building.*
+<<show_sprite SarahChrist>>
+Sarah Christ: Okay, Christ. This is it.
+Sarah Christ: Time to end this once and for all.
+
+<<change_background ScreenImages "EmptyLot">>
+<<fade_in ScreenFX>>
+Sarah Christ: I can hear chanting I must be getting close
+<<show_sprite Cult01>>
+<<show_sprite Cult02>>
+<<show_sprite EyeJar>>
+Sarah Christ: So that's why they took the eyes...
+Sarah Christ: It's some kind of ritual
+<<screen_shake ScreenFX>>
+Cult Member: Intruder! The detective is here!
+Sarah Christ: Hold it right there! You're all under arrest.
+*Laughing coming from the darkness*
+Cult Leader: Arrested?? We're Beyond Arrest Detective.
+Sarah White: Show Yourself!
+<<show_sprite Cult03>>
+Cult Leader: You shouldn't have come down this way detective.
+Cult Leader: We're on the brink of summoning our dark lord, Cthulhu.
+Sarah Christ: Cthulhu? ...My old arch nemesis. 
+Cult Leader: You're not seriously trying to summon an ancient evil?
+Cult Leader: Oh, we are. And once he rises...
+<<screen_shake ScreenFX>>
+Cult Leader: he'll consume the world.
+Sarah Christ: That's not going to happen.
+Sarah Christ: This ends now.
+<<screen_shake ScreenFX>>
+<<fade_out ScreenFX>>
+<<screen_shake ScreenFX>>
+*Fighting Sounds*
+Sarah Christ: Damn. There's too many of them.
+<<fade_in ScreenFX>>
+Cult Leader: You think you can stop us detective? 
+Cult Leader: We are too powerful for you!
+Sarah Christ: *Struggling* Im not giving up yet.
+Sarah Christ: I never give up.
+...
+<<fade_out ScreenFX>>
+<<wait 2>>
+Suddenly, Sarah sees a glint of light in the corner of her eye.
+It's the jar of eyes. She uses all her strength to reach for it, managing to grab it and break it on the ground.
+The eyes spill out everywhere, causing a distraction.
+<<hide_sprite EyeJar>>
+<<fade_in ScreenFX>>
+Sarah Christ: Well, well, well...Looks like the eye snatchers have become the eye-snatched. 
+Sarah Christ: I'm here to put an end to this madness, so you might as well pack up your tentacles and go home.
+Cult Leader: You can't stop us now!
+Sarah Christ: I don't need to stop you.
+Sarah Christ: All I need to do is disrupt your little ritual.
+Sarah Christ: *pulls out a flash grenade*
+Cult Leader: What is that? Some kind of toy?
+Sarah Christ: Oh, it's definitely not a toy. It's a little something I like to call...an "eye-opener."
+*Sarah throws the flash grenade into the middle of the room blinding the cultists and ending the ritual.*
+*The room starts to flash red and blue as the sound of police sirens are heard.*
+Sarah Christ: Looks like you'll have to find another way to summon your great Cthulhu. Eye guess you'll have to give up this little eye-snatching operation.
+Cult Leader: You haven't heard the last of us, Sarah. 
+Cult Leader: Cthulhu will rise, and when he does, you will pay for this.
+Sarah Christ: I can't wait to SEE you try.
+<<hide_sprite SarahChrist>>
+*Sarah slinks off into the darkness, the unknown hero saving the day yet again.*
+<<hide_sprite Cult01>>
+<<hide_sprite Cult02>>
+<<hide_sprite Cult03>>
+<<fade_out ScreenFX>>
+<<wait 2>>
+FIN.
+===
